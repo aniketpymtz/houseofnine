@@ -89,7 +89,7 @@ export default function Portfolio() {
           className="text-center mt-14"
         >
           <a
-            href="#contact"
+            href="/experience"
             className="inline-flex items-center gap-2 text-[#B96D56] border border-[#B96D56]/30 px-8 py-4 rounded-full text-sm tracking-wide hover:border-[#B96D56]/60 hover:bg-[#F0CDAF]/20 transition-all duration-300"
           >
             Start Your Project

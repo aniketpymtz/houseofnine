@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ChevronDownCircle } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -53,7 +54,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.65 }}
-          className="text-[#7a5c52] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-12"
+          className="text-[#7a5c52] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6"
         >
           We craft bespoke interiors that reflect your essence — blending
           timeless elegance with contemporary vision for spaces that inspire.
@@ -90,6 +91,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Scroll hint */}
+      </div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -100,10 +102,10 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-            className="w-px h-8 bg-linear-to-b from-[#B96D56]/50 to-transparent"
+            className="w-px bg-linear-to-b from-[#B96D56]/50 to-transparent"
           />
+          <ChevronDownCircle className="w-4 h-4 text-[#B96D56]/50 animate-bounce" />
         </motion.div>
-      </div>
     </section>
   );
 }
